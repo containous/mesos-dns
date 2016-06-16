@@ -52,7 +52,7 @@ following the instructions.
 1. Clone a separate copy of the Mesos-DNS repo as a sibling of your normal
    Mesos-DNS project directory and name it "mesos-dns-gh-pages".
 
-        git clone git@github.com:mesosphere/mesos-dns.git mesos-dns-gh-pages
+        git clone git@github.com:saagie/mesos-dns.git mesos-dns-gh-pages
 
 2. Check out the "gh-pages" branch.
 

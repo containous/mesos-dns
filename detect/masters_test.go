@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	mesos "github.com/mesos/mesos-go/mesosproto"
-	"github.com/mesosphere/mesos-dns/logging"
+	"github.com/saagie/mesos-dns/logging"
 )
 
 func init() {

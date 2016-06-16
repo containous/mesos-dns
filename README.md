@@ -1,4 +1,4 @@
-# Mesos-DNS [![Circle CI](https://circleci.com/gh/mesosphere/mesos-dns.svg?style=svg)](https://circleci.com/gh/mesosphere/mesos-dns) [![velocity](http://velocity.mesosphere.com/service/velocity/buildStatus/icon?job=public-mesos-dns-master)](http://velocity.mesosphere.com/service/velocity/job/public-mesos-dns-master/) [![Coverage Status](https://coveralls.io/repos/mesosphere/mesos-dns/badge.svg?branch=master&service=github)](https://coveralls.io/github/mesosphere/mesos-dns?branch=master) [![GoDoc](https://godoc.org/github.com/mesosphere/mesos-dns?status.svg)](https://godoc.org/github.com/mesosphere/mesos-dns) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mesosphere/mesos-dns?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+# Mesos-DNS [![Circle CI](https://circleci.com/gh/saagie/mesos-dns.svg?style=svg)](https://circleci.com/gh/saagie/mesos-dns) [![velocity](http://velocity.mesosphere.com/service/velocity/buildStatus/icon?job=public-mesos-dns-master)](http://velocity.mesosphere.com/service/velocity/job/public-mesos-dns-master/) [![Coverage Status](https://coveralls.io/repos/saagie/mesos-dns/badge.svg?branch=master&service=github)](https://coveralls.io/github/saagie/mesos-dns?branch=master) [![GoDoc](https://godoc.org/github.com/saagie/mesos-dns?status.svg)](https://godoc.org/github.com/saagie/mesos-dns) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/saagie/mesos-dns?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 Mesos-DNS enables [DNS](http://en.wikipedia.org/wiki/Domain_Name_System) based service discovery in [Apache Mesos](http://mesos.apache.org/) clusters.
 
 ![Architecture
@@ -9,13 +9,13 @@ Diagram](http://mesosphere.github.io/mesos-dns/img/architecture.png)
 maintaining backwards compatibility with the previous major version.
 
 ## Installing
-The official distribution and installation channel is pre-compiled binaries available in [Github releases](https://github.com/mesosphere/mesos-dns/releases).
+The official distribution and installation channel is pre-compiled binaries available in [Github releases](https://github.com/saagie/mesos-dns/releases).
 
 ## Building
 Building the **master** branch from source should always succeed but doesn't provide
 the same stability and compatibility guarantees as releases.
 
-All branches and pull requests are tested by [Circle-CI](https://circleci.com/gh/mesosphere/mesos-dns), which also
+All branches and pull requests are tested by [Circle-CI](https://circleci.com/gh/saagie/mesos-dns), which also
 outputs artifacts for Mac OS X, Windows, and Linux via cross-compilation.
 
 You will need [Go](https://golang.org/) *1.5* or later to build the project.
@@ -30,7 +30,7 @@ $ godep go build ./...
 #### To do a build:
 1. Cut a branch
 2. Tag it with the relevant version, and push the tags along with the branch
-3. If the build doesn't trigger automatically, go here: https://circleci.com/gh/mesosphere/mesos-dns, find your branch, and trigger the build.
+3. If the build doesn't trigger automatically, go here: https://circleci.com/gh/saagie/mesos-dns, find your branch, and trigger the build.
 
 #### If you choose to do a private build:
 1. Fork the repo on Github to a private repo
@@ -65,8 +65,8 @@ Contributions are welcome. Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) fo
 guidelines.
 
 ## Contact
-For any discussion that isn't well suited for Github [issues](https://github.com/mesosphere/mesos-dns/issues),
-please use our [mailing list](https://groups.google.com/forum/#!forum/mesos-dns) or our public [chat room](https://gitter.im/mesosphere/mesos-dns).
+For any discussion that isn't well suited for Github [issues](https://github.com/saagie/mesos-dns/issues),
+please use our [mailing list](https://groups.google.com/forum/#!forum/mesos-dns) or our public [chat room](https://gitter.im/saagie/mesos-dns).
 
 ## License
 This project is [Apache License 2.0](LICENSE).

@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/kylelemons/godebug/pretty"
-	. "github.com/mesosphere/mesos-dns/dnstest"
+	. "github.com/saagie/mesos-dns/dnstest"
 	"github.com/miekg/dns"
 )
 

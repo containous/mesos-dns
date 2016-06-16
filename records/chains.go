@@ -1,7 +1,7 @@
 package records
 
 import (
-	"github.com/mesosphere/mesos-dns/records/labels"
+	"github.com/saagie/mesos-dns/records/labels"
 )
 
 // chain is a generation func that consumes record-like strings and does

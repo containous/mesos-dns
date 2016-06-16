@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/mesosphere/mesos-dns/records/labels"
-	"github.com/mesosphere/mesos-dns/records/state"
+	"github.com/saagie/mesos-dns/records/labels"
+	"github.com/saagie/mesos-dns/records/state"
 )
 
 // BenchmarkInsertRR *only* tests insertRR, not the taskRecord funcs.

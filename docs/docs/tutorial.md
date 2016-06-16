@@ -20,11 +20,11 @@ We will install Mesos-DNS on the slave node `2.3.4.5` (replace this with your ac
 ssh 2.3.4.5
 ```
 
-Fetch the binary for your system from GitHub. The full list of releases can be seen [here](https://github.com/mesosphere/mesos-dns/releases):
+Fetch the binary for your system from GitHub. The full list of releases can be seen [here](https://github.com/saagie/mesos-dns/releases):
 
 ```
 mkdir /usr/local/mesos-dns/
-wget -O /usr/local/mesos-dns/mesos-dns https://github.com/mesosphere/mesos-dns/releases/download/v0.5.1/mesos-dns-v0.5.1-linux-amd64
+wget -O /usr/local/mesos-dns/mesos-dns https://github.com/saagie/mesos-dns/releases/download/v0.5.1/mesos-dns-v0.5.1-linux-amd64
 ```
 
 In the same directory (`/usr/local/mesos-dns`), create a file named `config.json` with the following contents:

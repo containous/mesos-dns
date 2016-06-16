@@ -15,11 +15,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mesosphere/mesos-dns/errorutil"
-	"github.com/mesosphere/mesos-dns/logging"
-	"github.com/mesosphere/mesos-dns/models"
-	"github.com/mesosphere/mesos-dns/records/labels"
-	"github.com/mesosphere/mesos-dns/records/state"
+	"github.com/saagie/mesos-dns/errorutil"
+	"github.com/saagie/mesos-dns/logging"
+	"github.com/saagie/mesos-dns/models"
+	"github.com/saagie/mesos-dns/records/labels"
+	"github.com/saagie/mesos-dns/records/state"
 	"github.com/tv42/zbase32"
 )
 
