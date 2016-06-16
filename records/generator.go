@@ -140,7 +140,7 @@ func NewRecordGenerator(httpTimeout time.Duration) *RecordGenerator {
 // into DNS records.
 func (rg *RecordGenerator) ParseState(c Config, masters ...string) error {
 	// find master -- return if error
-	sj, err := rg.findMaster(masters...)
+	sj, err := rg.FindMaster(masters...)
 	if err != nil {
 		logging.Error.Println("no master")
 		return err
@@ -161,7 +161,7 @@ func (rg *RecordGenerator) ParseState(c Config, masters ...string) error {
 
 // Tries each master and looks for the leader
 // if no leader responds it errors
-func (rg *RecordGenerator) findMaster(masters ...string) (state.State, error) {
+func (rg *RecordGenerator) FindMaster(masters ...string) (state.State, error) {
 	var sj state.State
 	var leader string
 
