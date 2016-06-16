@@ -4,7 +4,7 @@ title: Mesos-DNS using systemd
 
 ## Mesos-DNS using systemd
 
-This is a step-by-step tutorial for running [Mesos-DNS](https://github.com/mesosphere/mesos-dns) with [systemd](http://freedesktop.org/wiki/Software/systemd/). 
+This is a step-by-step tutorial for running [Mesos-DNS](https://github.com/saagie/mesos-dns) with [systemd](http://freedesktop.org/wiki/Software/systemd/). 
 
 ### Step 1: Launch a Mesosphere cluster on a systemd platform
 
@@ -25,7 +25,7 @@ For this tutorial we will assume the master IP address is `10.14.245.208`.
 
 We will install Mesos-DNS on node `10.14.245.208`.  Access the node through ssh.
 
-After downloading a [release](https://github.com/mesosphere/mesos-dns/releases) and
+After downloading a [release](https://github.com/saagie/mesos-dns/releases) and
 extracting it, place the executable in well known location such as
 `/usr/bin/mesos-dns`.
 

@@ -15,11 +15,11 @@ import (
 
 	"github.com/emicklei/go-restful"
 	_ "github.com/mesos/mesos-go/detector/zoo" // Registers the ZK detector
-	"github.com/mesosphere/mesos-dns/exchanger"
-	"github.com/mesosphere/mesos-dns/logging"
-	"github.com/mesosphere/mesos-dns/models"
-	"github.com/mesosphere/mesos-dns/records"
-	"github.com/mesosphere/mesos-dns/util"
+	"github.com/saagie/mesos-dns/exchanger"
+	"github.com/saagie/mesos-dns/logging"
+	"github.com/saagie/mesos-dns/models"
+	"github.com/saagie/mesos-dns/records"
+	"github.com/saagie/mesos-dns/util"
 	"github.com/miekg/dns"
 )
 
@@ -547,7 +547,7 @@ func (res *Resolver) RestVersion(req *restful.Request, resp *restful.Response) {
 	err := resp.WriteAsJson(map[string]string{
 		"Service": "Mesos-DNS",
 		"Version": res.version,
-		"URL":     "https://github.com/mesosphere/mesos-dns",
+		"URL":     "https://github.com/saagie/mesos-dns",
 	})
 	if err != nil {
 		logging.Error.Println(err)

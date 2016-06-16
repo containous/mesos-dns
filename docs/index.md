@@ -8,7 +8,7 @@ title: DNS-based service discovery for Mesos
     DNS-based service discovery for Mesos
   </p>
   <p>
-    <a href="https://github.com/mesosphere/mesos-dns/releases"
+    <a href="https://github.com/saagie/mesos-dns/releases"
         class="btn btn-lg btn-primary">
       Mesos-DNS releases
     </a>
@@ -16,7 +16,7 @@ title: DNS-based service discovery for Mesos
 </div>
 
 
-[Mesos-DNS](https://github.com/mesosphere/mesos-dns) supports service discovery in [Apache Mesos](http://mesos.apache.org/) clusters. It allows applications and services running on Mesos to find each other through the domain name system ([DNS](http://en.wikipedia.org/wiki/Domain_Name_System)), similarly to how services discover each other throughout the Internet. Applications launched by [Marathon](https://github.com/mesosphere/marathon) or [Aurora](http://aurora.incubator.apache.org/) are assigned names like `search.marathon.mesos` or `log-aggregator.aurora.mesos`. Mesos-DNS translates these names to the IP address and port on the machine currently running each application. To connect to an application in the Mesos datacenter, all you need to know is its name. Every time a connection is initiated, the DNS translation will point to the right machine in the datacenter. 
+[Mesos-DNS](https://github.com/saagie/mesos-dns) supports service discovery in [Apache Mesos](http://mesos.apache.org/) clusters. It allows applications and services running on Mesos to find each other through the domain name system ([DNS](http://en.wikipedia.org/wiki/Domain_Name_System)), similarly to how services discover each other throughout the Internet. Applications launched by [Marathon](https://github.com/mesosphere/marathon) or [Aurora](http://aurora.incubator.apache.org/) are assigned names like `search.marathon.mesos` or `log-aggregator.aurora.mesos`. Mesos-DNS translates these names to the IP address and port on the machine currently running each application. To connect to an application in the Mesos datacenter, all you need to know is its name. Every time a connection is initiated, the DNS translation will point to the right machine in the datacenter. 
 
 
 Mesos-DNS is designed to be a minimal, stateless service that is easy to deploy and maintain. The figure below depicts how it works:

@@ -13,9 +13,9 @@ import (
 	"testing/quick"
 	"time"
 
-	"github.com/mesosphere/mesos-dns/logging"
-	"github.com/mesosphere/mesos-dns/records/labels"
-	"github.com/mesosphere/mesos-dns/records/state"
+	"github.com/saagie/mesos-dns/logging"
+	"github.com/saagie/mesos-dns/records/labels"
+	"github.com/saagie/mesos-dns/records/state"
 )
 
 func init() {

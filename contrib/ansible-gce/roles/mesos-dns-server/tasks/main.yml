@@ -19,7 +19,7 @@
   ignore_errors: True
 
 - name: Building mesos-dns binaries
-  shell: mkdir -p pkg && go get github.com/miekg/dns github.com/mesosphere/mesos-dns
+  shell: mkdir -p pkg && go get github.com/miekg/dns github.com/saagie/mesos-dns
   environment:
     PATH: "{{ ansible_env.HOME }}/go/bin:/usr/local/bin:/usr/bin:/bin"
     GOPATH: "{{ ansible_env.HOME }}/pkg"

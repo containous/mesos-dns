@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/mesos/mesos-go/detector"
-	"github.com/mesosphere/mesos-dns/detect"
-	"github.com/mesosphere/mesos-dns/logging"
-	"github.com/mesosphere/mesos-dns/records"
-	"github.com/mesosphere/mesos-dns/resolver"
-	"github.com/mesosphere/mesos-dns/util"
+	"github.com/saagie/mesos-dns/detect"
+	"github.com/saagie/mesos-dns/logging"
+	"github.com/saagie/mesos-dns/records"
+	"github.com/saagie/mesos-dns/resolver"
+	"github.com/saagie/mesos-dns/util"
 )
 
 func main() {
@@ -52,7 +52,7 @@ func main() {
 		go func() { errch <- <-res.LaunchHTTP() }()
 	}
 
-	changed := detectMasters(config.Zk, config.Masters)
+	changed := DetectMasters(config.Zk, config.Masters)
 	reload := time.NewTicker(time.Second * time.Duration(config.RefreshSeconds))
 	zkTimeout := time.Second * time.Duration(config.ZkDetectionTimeout)
 	timeout := time.AfterFunc(zkTimeout, func() {
@@ -82,7 +82,7 @@ func main() {
 	}
 }
 
-func detectMasters(zk string, masters []string) <-chan []string {
+func DetectMasters(zk string, masters []string) <-chan []string {
 	changed := make(chan []string, 1)
 	if zk != "" {
 		logging.Verbose.Println("Starting master detector for ZK ", zk)

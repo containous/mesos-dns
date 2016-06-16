@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/mesosphere/mesos-dns",
+	"ImportPath": "github.com/saagie/mesos-dns",
 	"GoVersion": "go1.5.1",
 	"Packages": [
 		"./..."

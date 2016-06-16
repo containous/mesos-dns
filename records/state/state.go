@@ -51,6 +51,7 @@ type Status struct {
 	State           string          `json:"state"`
 	Labels          []Label         `json:"labels,omitempty"`
 	ContainerStatus ContainerStatus `json:"container_status,omitempty"`
+	Healthy         string          `json:"healthy"`
 }
 
 // ContainerStatus holds container metadata as defined in the /state.json
@@ -85,6 +86,7 @@ type Task struct {
 	DiscoveryInfo DiscoveryInfo `json:"discovery"`
 
 	SlaveIP string `json:"-"`
+	Labels  []Label `json:"labels,omitempty"`
 }
 
 // HasDiscoveryInfo return whether the DiscoveryInfo was provided in the state.json

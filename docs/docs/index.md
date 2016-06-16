@@ -5,7 +5,7 @@ title: Installing and running Mesos-DNS
 ## Installing and running Mesos-DNS
 
 Stable binaries for the project are published via the GitHub release
-channel: https://github.com/mesosphere/mesos-dns/releases.
+channel: https://github.com/saagie/mesos-dns/releases.
 
 To run Mesos-DNS, you first need to install the `mesos-dns` binary somewhere on a selected server. The server can be the same machine as one of the Mesos masters, one of the slaves, or a dedicated machine on the same network. Next, follow [these instructions](configuration-parameters.html) to create a configuration file for your cluster. You can launch Mesos-DNS with: 
 

@@ -15,11 +15,11 @@ import (
 	"testing"
 
 	"github.com/kylelemons/godebug/pretty"
-	. "github.com/mesosphere/mesos-dns/dnstest"
-	"github.com/mesosphere/mesos-dns/logging"
-	"github.com/mesosphere/mesos-dns/records"
-	"github.com/mesosphere/mesos-dns/records/labels"
-	"github.com/mesosphere/mesos-dns/records/state"
+	. "github.com/saagie/mesos-dns/dnstest"
+	"github.com/saagie/mesos-dns/logging"
+	"github.com/saagie/mesos-dns/records"
+	"github.com/saagie/mesos-dns/records/labels"
+	"github.com/saagie/mesos-dns/records/state"
 	"github.com/miekg/dns"
 )
 
@@ -309,7 +309,7 @@ func TestHTTP(t *testing.T) {
 		{"/v1/version", http.StatusOK, map[string]interface{}{},
 			map[string]interface{}{
 				"Service": "Mesos-DNS",
-				"URL":     "https://github.com/mesosphere/mesos-dns",
+				"URL":     "https://github.com/saagie/mesos-dns",
 				"Version": "0.1.1",
 			},
 		},
